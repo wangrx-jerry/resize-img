@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="drag.js"></script>
+	<title>img demo</title>
+	<style type="text/css">
+		#container {
+			position: relative;
+			width: 600px;
+			height: 600px;
+			margin: 30px auto;
+			background-color: #ccc
+		}
+
+		#box {
+			width: 200px;
+			height: 100px;
+			cursor: move;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #FFF;
+			-webkit-box-shadow: 10px 10px 25px #ccc;
+			-moz-box-shadow: 10px 10px 25px #ccc;
+			box-shadow: 10px 10px 25px #ccc;
+		}
+
+		#coor {
+			width: 10px;
+			height: 10px;
+			overflow: hidden;
+			cursor: se-resize;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background-color: #09C;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 容器 -->
+	<div id="container">
+		<!-- 拖动部分 -->
+		<div id="box">
+			<img src="1.jpg" width="100%" height="100%" alt="">
+			<!-- 拖动点 -->
+			<div id="coor"></div>
+		</div>
+	</div> 
+</body>
+
+</html>
